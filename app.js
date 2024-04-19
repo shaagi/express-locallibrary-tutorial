@@ -12,7 +12,7 @@ var app = express();
 // Set up mongoose connection
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
-const mongoDB = "mongodb+srv://dbUser:<dbUserPassword>@cluster0.logwwes.mongodb.net/local_library?retryWrites=true&w=majority&appName=Cluster0";
+const mongoDB = 'mongodb+srv://dbUser:passw0rdMongo@cluster0.logwwes.mongodb.net/local_library?retryWrites=true&w=majority&appName=Cluster0';
 
 main().catch((err) => console.log(err));
 async function main() {
