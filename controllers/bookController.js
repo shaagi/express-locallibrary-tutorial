@@ -220,7 +220,7 @@ exports.book_update_get = asyncHandler(async (req, res, next) => {
   }
 
   // Mark our selected genres as checked.
-  allGenres.forEach((genre) => {
+  allGenres.forEach((genre) => { 
     if (book.genre.includes(genre._id)) genre.checked = "true";
   });
 
